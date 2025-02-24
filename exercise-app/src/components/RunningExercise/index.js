@@ -17,6 +17,7 @@ const [isRunning, setIsRunning] = useState(false);
 
 //NEW THING
 const [laps, setLaps] = useState([]);
+//these are variables
 
 
 

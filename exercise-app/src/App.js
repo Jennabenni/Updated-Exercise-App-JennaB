@@ -26,6 +26,12 @@ const exerciseData = [
       },{
         "exerciseItem": "Planks",
          "type": "duration"
+      },{
+        "exerciseItem": "Squats",
+        "type": "repetition"
+      }, {
+        "exerciseItem": "Sprint",
+        "type": "running"
       }
     ]
   }
