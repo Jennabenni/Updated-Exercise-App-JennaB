@@ -9,6 +9,7 @@ import React, {useState} from "react";
 import DurationExercise from "./components/DurationExercise";
 import RepetitionExercise from "./components/RepetitionExercise";
 //I need these to make the buttons work
+import RunningExercise from "./components/RunningExercise";
 
 const exerciseData = [
   {
