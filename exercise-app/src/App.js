@@ -22,7 +22,7 @@ const exerciseData = [
         //this is crucial on how to direct the button
       },{
         "exerciseItem": "Running",
-        "type": "duration"
+        "type": "running"
       },{
         "exerciseItem": "Planks",
          "type": "duration"
@@ -80,9 +80,16 @@ function App() {
           {currentExercise.type === "duration" ? (
             <DurationExercise name={currentExercise.exerciseItem}/>
             //navigates to duration and rep respectively
-          ) : (
+          ) : currentExercise.type === "repetition" ? (
             <RepetitionExercise name={currentExercise.exerciseItem} />
-          )}
+
+          ) : (
+            <RunningExercise name={currentExercise.exerciseItem} />
+
+          )
+          //i may have to add another ternary operator
+
+          }
         </>
       ) : (
         //this is the loop!!
